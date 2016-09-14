@@ -5,6 +5,8 @@
 #include <windows.h>
 #include <conio.h>
 #include <ctype.h>
+#include <string.h>
+
 
 
 
@@ -18,12 +20,18 @@
 //
 // --------------------------------------------------------- */
 
-    // Array para ordenar
-    float primero = 4.3;
-    float segundo = 5.8;
 
+
+
+
+    // Arrays del ABML
+    char nombre[50];
+    float precio[50];
+    int codigo[50];
+    int estado[50]; // 1 - Activo -1 - Inactivo.
     // Estados
     int bandera = 0;
+    int lugar;
 
 
 int main()
@@ -33,7 +41,8 @@ int main()
                         "3. Baja.\n"
                         "4. Listar ordenadamente.\n"
                         "5. Salir";
-    // Cargar menú principal.
+
+
     while(bandera!=5)
     {
         loadMenu(bandera, menu);
@@ -43,8 +52,12 @@ int main()
         switch(bandera)
         {
         case 1:
-            printf("Opcion 1.\n");
+            estado[0] = 1;
+            estado[1] = 2;
+            lugar = primerVacio(estado);
+            printf("\nPrimer lugar vacio es: %d",lugar);
             system("pause");
+
             break;
         case 2:
             break;

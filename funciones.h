@@ -21,4 +21,7 @@ int swapFloat(float *, float *);
 // Interface.
 void loadMenu(int segu,const char menu[]);
 
+// Strings
+int primerVacio(int esta[]);
+
 #endif // FUNCIONES_H_INCLUDED

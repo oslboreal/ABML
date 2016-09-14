@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1473803870 source:c:\users\jvallejo\code\abml-master\jmv_genericas.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+
+1473885729 c:\users\jvallejo\code\abml-master\funciones.h
+
+1473884675 source:c:\users\jvallejo\code\abml-master\jmv_stringpropias.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+
+1473885856 source:c:\users\jvallejo\code\abml-master\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"funciones.h"
+	<windows.h>
+	<conio.h>
+	<ctype.h>
+	<string.h>
+
+1473885785 source:c:\users\jvallejo\code\abml-master\jmv_abml.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+
