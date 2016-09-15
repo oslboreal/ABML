@@ -21,7 +21,8 @@ int swapFloat(float *, float *);
 // Interface.
 void loadMenu(int segu,const char menu[]);
 
-// Strings
+// ABML
 int primerVacio(int esta[]);
-
+int altaProducto(int cod[], float *price, int *state, char *desc);
+int mostrarRegistro(int id,int cod[], char desc[], float price[], int state[]);
 #endif // FUNCIONES_H_INCLUDED

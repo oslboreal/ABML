@@ -25,13 +25,16 @@
 
 
     // Arrays del ABML
-    char nombre[50];
+    char descripcion[50][50];
     float precio[50];
     int codigo[50];
-    int estado[50]; // 1 - Activo -1 - Inactivo.
+    int estado[50]; // 1 - Activo 0  - De baja
     // Estados
     int bandera = 0;
     int lugar;
+
+    // Contadores y acumuladores
+    int i;
 
 
 int main()
@@ -52,12 +55,37 @@ int main()
         switch(bandera)
         {
         case 1:
+            codigo[0] = 2343;
+            //descripcion[0] = "PRueba";
+            precio[0] = 23.4;
             estado[0] = 1;
-            estado[1] = 2;
+            //
             lugar = primerVacio(estado);
-            printf("\nPrimer lugar vacio es: %d",lugar);
+
+            printf("\nPrimer lugar vacio es: %d\n",lugar);
+            printf("\nEstado 0: %d",estado[0]);
+            printf("\nCodigo 0: %d",codigo[0]);
+            printf("\nPrecio 0: %f",precio[0]);
+            system("pause");
+              altaProducto(codigo,precio,estado,descripcion);
+
+            printf("\nEstado 0: %d",estado[0]);
+            printf("\nCodigo 0: %d",codigo[0]);
+            printf("\nPrecio 0: %f",precio[0]);
+            printf("\nDescripcion 0: %s",descripcion[0]);
+            system("pause");
+            //altaProducto(codigo,descripcion,precio,estado);
+
+            system("pause");
+            for(i = 0; i < 50; i++)
+            {
+            printf("\nEstado 0: %d",estado[i]);
+            printf("\nCodigo 0: %d",codigo[i]);
+            printf("\nPrecio 0: %f\n\n",precio[i]);
+            }
             system("pause");
 
+            system("pause");
             break;
         case 2:
             break;
