@@ -6,7 +6,7 @@
 	<strings.h>
 	"funciones.h"
 
-1473885729 c:\users\jvallejo\code\abml-master\funciones.h
+1473963633 c:\users\jvallejo\code\abml-master\funciones.h
 
 1473884675 source:c:\users\jvallejo\code\abml-master\jmv_stringpropias.c
 	<stdlib.h>
@@ -15,7 +15,7 @@
 	<strings.h>
 	"funciones.h"
 
-1473885856 source:c:\users\jvallejo\code\abml-master\main.c
+1473963685 source:c:\users\jvallejo\code\abml-master\main.c
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
@@ -25,7 +25,7 @@
 	<ctype.h>
 	<string.h>
 
-1473885785 source:c:\users\jvallejo\code\abml-master\jmv_abml.c
+1473963765 source:c:\users\jvallejo\code\abml-master\jmv_abml.c
 	<stdlib.h>
 	<stdio.h>
 	<math.h>
