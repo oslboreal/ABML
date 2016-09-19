@@ -10,5 +10,6 @@ Falta Validar edad. // Usar funcion ValidateIsNum.
 
 Falta Validar dni. // Usar funcion validateIsNum.
 
-- 18/9 - Se agregó el sistema de borrado.
-
+-18/9 - Se agregó el sistema de borrado.
+-
+Listado de registros activos [FUNCIONAL].
