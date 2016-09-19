@@ -1,6 +1,7 @@
 # ABML
 
 - 18/9 - Se agregó el sistema de Alta.
+-
 Busca el primer registro vacío [FUNCIONAL].
  
 Falta Validar nombre. // Usar funcion ValidateIsName.
