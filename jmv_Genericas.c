@@ -166,10 +166,10 @@
      }
 
 
-/** \brief Intercambia dos caracteres.
+/** \brief Intercambia dos flotantes.
  *
- * \param Primer caracter a intercambiar.
- * \param Segundo caracter con el que se realizará el intercambio.
+ * \param Primer flotante a intercambiar.
+ * \param Segundo flotante con el que se realizará el intercambio.
  * \return Retornará: [1] Si se intercambió correctamente - [0] Si no se logró realizar el intercambio.
  *
  */
@@ -194,42 +194,6 @@
      }
 
 
-/** \brief Recorre un array de numeros con decimal y los ordena.
- *
- * \param Un array de enteros de tipo INT
- * \return Return [1] si pudo ordenarlo o [0] si no pudo.
- *
- */
-
- int burbujeoFloat(float *arr[])
-     {
-        return 0;
-     }
-
-/** \brief Recorre un array de strings y los ordena.
- *
- * \param Un array de enteros de tipo INT
- * \return Return [1] si pudo ordenarlo o [0] si no pudo.
- *
- */
-
- int burbujeoEntero(char *arr[])
-     {
-        return 0;
-     }
-
-/** \brief Recorre un array de strings y los ordena.
- *
- * \param Un array de enteros de tipo INT
- * \return Return [1] si pudo ordenarlo o [0] si no pudo.
- *
- */
-
- int burbujeoChar(int *arr[])
-     {
-        return 0;
-     }
-
 
 /** \brief Inicializa un menu de consola.
  *
@@ -246,3 +210,62 @@
 
 
     }
+
+/** \brief Recorre un array de strings y los ordena.
+ *
+ * \param Un array de enteros de tipo INT
+ * \return Return [1] si pudo ordenarlo o [0] si no pudo.
+ *
+ */
+
+ int validateIsName(char name[])
+     {
+
+                    int operacion;
+                    int i;
+                    int longitd = 0;
+                    int acumNum = 0;
+
+
+                    // Calculo el tamaño del arreglo.
+                    longitd = strlen(name);
+
+
+                    // Recorro el arreglo.
+                    for(i = 0;i!=longitd;i++)
+                    {
+
+                        // Chequeo minusculas.
+                        if(name[i]==' ' || name[i]=='a' || name[i]=='b' || name[i]=='c' || name[i]=='d'  || name[i]=='e' || name[i]=='f'  || name[i]=='g' || name[i]=='h'
+                            || name[i]=='i' || name[i]=='j' || name[i]=='k' || name[i]=='l' || name[i]=='m' || name[i]=='n' || name[i]=='o' || name[i]=='p' || name[i]=='q' || name[i]=='r' || name[i]=='s' || name[i]=='t'
+                             || name[i]=='u' || name[i]=='v' || name[i]=='w' || name[i]=='x' || name[i]=='y' || name[i]=='z' || name[i]=='ñ')
+                        {
+                            acumNum ++;
+                        }
+
+                        // Chequeo mayusculas.
+                        if(name[i]=='A' || name[i]=='B' || name[i]=='C' || name[i]=='D'  || name[i]=='E' || name[i]=='F'  || name[i]=='G' || name[i]=='H'
+                            || name[i]=='I' || name[i]=='J' || name[i]=='K' || name[i]=='L' || name[i]=='M' || name[i]=='N' || name[i]=='O' || name[i]=='P' || name[i]=='Q' || name[i]=='R' || name[i]=='S' || name[i]=='T'
+                             || name[i]=='U' || name[i]=='V' || name[i]=='W' || name[i]=='X' || name[i]=='Y' || name[i]=='Z' || name[i]=='Ñ')
+                        {
+                            acumNum ++;
+                        }
+                     }
+
+
+                        // Si el acumulador es distinto a la longitud es por que en alguno de los indices del array
+                        // no se cumplieron las condiciones de arriba, ´por lo tanto no son letras o los caracteres permitidos
+                        // por lop tanto no es un nombre
+
+                        if(acumNum!=longitd)
+                        {
+                            operacion = 0;
+                        } else
+                        {
+                            operacion = 1;
+                        }
+
+
+        return operacion;
+     }
+

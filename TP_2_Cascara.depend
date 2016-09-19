@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1474249579 source:c:\users\marcos vallejo\desktop\programación en c\trabajo práctico ii - abm\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"funciones.h"
+
+1474249626 c:\users\marcos vallejo\desktop\programación en c\trabajo práctico ii - abm\funciones.h
+
+1474248409 source:c:\users\marcos vallejo\desktop\programación en c\trabajo práctico ii - abm\jmv_abml.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	"funciones.h"
+
+1474235058 c:\users\marcos vallejo\desktop\programación en c\trabajo práctico ii - abm\jmv_abml.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	"funciones.h"
+
+1474249995 source:c:\users\marcos vallejo\desktop\programación en c\trabajo práctico ii - abm\jmv_genericas.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<strings.h>
+	"funciones.h"
+
