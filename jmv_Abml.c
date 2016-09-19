@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
+#include <conio.h>
+#include <ctype.h>
 #include "funciones.h"
 
 /** \brief Indica cual es el primer registro vacio de un conjunto de arrays paralelos.
@@ -39,37 +41,84 @@ void loadPerson(struct datosPersonas *p)
     char buffer[4000]; // Array de caracteres buffer para ingresar caracteres indiscriminadamente y luego validarlos.
     int pos = regOff(p); // Esta funcion retorna la posicion del primer registro vacio.}
     int estado;
-    char bande = 's';
+    char bande = 'n';
 
     do
     {
+        // SOLICITO NOMBRE.
+        printf("Nombre de la persona a cargar:");
 
-        // Solicito nombre
-    printf("Nombre de la persona a cargar:");
-    scanf("%s",buffer);
-    estado = validateIsName(buffer);
-    fflush(stdin);
+        scanf("%s",buffer);
+        fflush(stdin);
+        estado = validateIsName(buffer); // Valido el nombre return [1] Si es valido [0] Si no.
 
-    if(estado==1)
-    {
-        strcpy(p[pos].nombre,buffer);
-    }   else
+
+        if(estado==1)
         {
+            // Si la cadena es correcta automáticamente la asigno.
+            strcpy(p[pos].nombre,buffer);
+            bande = 'n';
+        }   else // De lo contrario pregunto...
+                {
+                    printf("El nombre ingresado es invalido, desea reingresar y seguir cargando datos? S/N: ");
+                    bande = tolower(getch());
+                    if(bande=='n')
+                    {
+                        bande = 's'; // Si sale todo mal asigno el flag en 's'
+                        break;
+                    }
+                }
+
+    }while(bande=='s');
+
+    do
+    {
+        if(bande=='s') // Si entra con 's' Corta.
+        {
+            break;
+        } else
+            {
+
+            }
+        // Solicito edad
+
+        printf("Edad de la persona a cargar:");
+        scanf("%s",buffer);
+        estado = validateIsNum(buffer,2);
+
+        if(estado==1)
+        {
+            p[pos].edad = atoi(buffer);
+
+        } else
+            {
+                    printf("El dato ingresado es invalido, desea reingresar y seguir cargando datos? S/N: ");
+                    bande = tolower(getch());
+                    if(bande=='n')
+                    {
+                        bande = 's'; // Si sale todo mal asigno el flag en 's'
+                        break;
+                    }
+            }
 
 
-            printf("El nombre ingresado es invalido, desea reingresar y seguir cargando datos? S/N: ");
-            scanf("%c",&bande);
+
+    }while(bande=='s');
+
+
+    do
+    {
+        if(bande=='s') // Si entra con 's' Corta.
+        {
+            break;
         }
-
-
-
-    // Solicito edad
-    printf("Edad de la persona a cargar:");
-    scanf("%d",&p[pos].edad);
 
     // Solicito documento.
     printf("Documento de identidad de la persona a cargar:");
     scanf("%d",&p[pos].dni);
+
+    }while(bande=='s');
+
 
     // Cambio el estado del registro a activo.
     p[pos].idEstado = 'a'; // Se asigna el estado ACTIVO automáticamente siendo que es una alta.
@@ -91,17 +140,7 @@ void loadPerson(struct datosPersonas *p)
                     }
                 }
 
-                }
-    }while(bande=='s');
-
-
-
-
-
-
-
-
-
+        }
 
     printf("\n");
 }

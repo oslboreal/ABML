@@ -102,5 +102,11 @@ void printActiveUssersNameList(struct datosPersonas *p);
 *
 */
  int validateIsName(char name[]);
+ /** \brief
+* \param
+* \return
+*
+*/
+int validateIsNum(char num[], int tipo);
 
 #endif // FUNCIONES_H_INCLUDED
