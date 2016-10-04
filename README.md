@@ -1,15 +1,16 @@
 # ABML
 
 - 18/9 - Se agregó el sistema de Alta.
--
-Busca el primer registro vacío [FUNCIONAL].
- 
-Falta Validar nombre. // Usar funcion ValidateIsName.
 
-Falta Validar edad. // Usar funcion ValidateIsNum.
+Desarrollo de bibliotecas personales:
 
-Falta Validar dni. // Usar funcion validateIsNum.
+regOff(); - Encuentra el primer registro vácio ( Hay que estandarizarla ).
+validateIsNum(); - Funcionando correctamente.
+validateIsName(); - Funcionando correctamente.
+validateIsPos(); (Valida si es positivo) - Funcionando correctamente.
+validateIsNotZero(); - Funcionando correctamente.
 
--18/9 - Se agregó el sistema de borrado.
--
-Listado de registros activos [FUNCIONAL].
+#Desarrollando actualmente:
+- validateIsField(); - Una sola funcion que valida en funcion del argumento que se le pasa por valor. (Valida multiples criterios).
+
+                 
