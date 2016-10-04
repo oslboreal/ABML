@@ -1,16 +1,12 @@
 # ABML - Desarrollo de bibliotecas.
 
-- 18/9 - Se agregó el sistema de Alta.
+-> regOff(); - Encuentra el primer registro vácio ( Hay que estandarizarla ).
 
-Desarrollo de bibliotecas personales:
+-> validateIsNum(); - Funcionando correctamente.
 
-->regOff(); - Encuentra el primer registro vácio ( Hay que estandarizarla ).
+-> validateIsName(); - Funcionando correctamente.
 
-->validateIsNum(); - Funcionando correctamente.
-
-->validateIsName(); - Funcionando correctamente.
-
-->validateIsPos(); (Valida si es positivo) - Funcionando correctamente.
+-> validateIsPos(); (Valida si es positivo) - Funcionando correctamente.
 
 ->validateIsNotZero(); - Funcionando correctamente.
 
