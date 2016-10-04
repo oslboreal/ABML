@@ -29,6 +29,9 @@ validateIsField();
 *// Solo es necesario cambiarle el puntero a la estructura y que el id de estado sea isEmpty.
 
 #Desarrollando actualmente - Cascaras:
-1 - Menú principal. (LISTO)
-2 - Sub menú. (FALTA)
-3 - Cascara para el alta y la modificación /* Iguales pero la mod solo pide id */ (FALTA)
+
+1 - Menú principal. (LISTO).
+
+2 - Sub menú. (FALTA).
+
+3 - Cascara para el alta y la modificación /* Iguales pero la mod solo pide id */ (FALTA).
